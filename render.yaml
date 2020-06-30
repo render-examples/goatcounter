@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: goatcounter
+    env: docker
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: goatcounter
+          property: connectionString
+      - key: GC_USER_EMAIL
+        sync: false
+      - key: GC_PASSWORD
+        sync: false
+
+databases:
+  - name: goatcounter
+    databaseName: goatcounter
+    user: goatcounter
