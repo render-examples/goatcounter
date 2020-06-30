@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: goatcounter
+    env: docker
+    envVars:
+      - key: DB_NAME
+        fromDatabase:
+          name: goatcounter-postgres
+          property: database
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: goatcounter-postgres
+          property: password
+      - key: DB_USER
+        fromDatabase:
+          name: goatcounter-postgres
+          property: user
+      - key: DB_CONNECTION_STRING
+        fromDatabase:
+          name: goatcounter-postgres
+          property: connectionString
+      - key: GC_USER_EMAIL
+        sync: false
+      - key: GC_PASSWORD
+        sync: false
+
+databases:
+  - name: goatcounter-postgres
+    databaseName: goatcounter
+    user: goatcounter
