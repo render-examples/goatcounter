@@ -7,7 +7,7 @@ RUN apk --no-cache add \
     tzdata \
     wget
 
-ENV GC_VERSION=v1.3.0
+ENV GC_VERSION=v1.3.2
 ENV GC_DOWNLOAD="https://github.com/zgoat/goatcounter/releases/download/${GC_VERSION}/goatcounter-${GC_VERSION}-linux-amd64.gz"
 ENV GC_SCHEMA="https://raw.githubusercontent.com/zgoat/goatcounter/${GC_VERSION}/db/schema.pgsql"
 
