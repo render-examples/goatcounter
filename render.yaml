@@ -2,6 +2,7 @@ services:
   - type: web
     name: goatcounter
     env: docker
+    healthCheckPath: /status
     envVars:
       - key: DB_NAME
         fromDatabase:

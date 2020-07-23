@@ -4,7 +4,7 @@ RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata
 RUN apt-get update
 RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install postgresql
 
-ENV GC_VERSION=v1.3.0
+ENV GC_VERSION=v1.3.2
 
 ADD https://github.com/zgoat/goatcounter/releases/download/${GC_VERSION}/goatcounter-${GC_VERSION}-linux-amd64.gz /bin/goatcounter.gz
 
