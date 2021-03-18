@@ -16,7 +16,7 @@ This repo can be used to deploy [Goat Counter] on Render.
 
 ### Manual Deployment
 
-See the guide at https://render.com/docs/deploy-goat-counter.
+See the guide at https://render.com/docs/deploy-goatcounter.
 
 If you need help, chat with us at https://render.com/chat.
 
