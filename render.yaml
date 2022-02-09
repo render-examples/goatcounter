@@ -1,6 +1,7 @@
 services:
   - type: web
     name: goatcounter
+    region: ohio
     env: docker
     healthCheckPath: /status
     envVars:
@@ -28,4 +29,5 @@ services:
 databases:
   - name: goatcounter-postgres
     databaseName: goatcounter
+    region: ohio
     user: goatcounter
