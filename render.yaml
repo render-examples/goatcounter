@@ -3,6 +3,7 @@ services:
     name: goatcounter
     env: docker
     healthCheckPath: /status
+    autoDeploy: false
     envVars:
       - key: DB_NAME
         fromDatabase:
